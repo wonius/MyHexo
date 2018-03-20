@@ -92,9 +92,13 @@ git branch / git br
 
 #创建本地分支
 git branch test
-
 #本地分支推送到远程
 git push origin test
+
+#创建本地分支test1，并跟踪远程分支ci
+git checkout -b test1 origin/ci
+#推送到远程仓库
+git push origin test1
 
 #切换分支
 git checkout test
@@ -104,7 +108,45 @@ git br -d test
 
 #删除远程分支
 git branch -r -d origin/test
-git push origin :test
+git push origin :test 
+```
+
+## fatal: refusing to merge unrelated histories
+
+通常是因为本地仓库的历史记录，与远程仓库的历史记录不同，git认为是两个完全无关的项目，无法pull
+
+解决办法：
+
+```
+git pull origin master ----allow-unrelated-histories
+```
+
+## 代码提交到不同仓库
+
+1. 手动分别推送（如果需要两个库代码不同）
+
+```
+
+//添加仓库，并设置别名
+git remote add github https://*****.git
+git remote add gitlab https://*****.git
+
+//推送
+git push github master:master
+//如果是新建的仓库，需要加-f参数
+git push -f github master:master
+```
+
+2. 一键push所有库（两个库代码完全一样）
+
+```
+//将新仓库URL绑定到origin上
+git remote set-url --add origin https://*****.git
+//push
+git push
+
+//查看git中配置的url
+git config -e
 ```
 
 
@@ -114,3 +156,9 @@ git push origin :test
 ## 常用命令
 
 [Git常用命令](https://git-scm.com/docs)
+
+
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

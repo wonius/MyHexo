@@ -38,7 +38,7 @@ description: 记录一次生产环境Mysql迁移记录
 
 1. 查询缓存的设置
 
-   ```Mysql
+   ```
    #查看查询缓存的设置
    #如下参数都可是使用 select @@global.XXXX; 单独查询
    show variables like '%query_cache%';
@@ -100,3 +100,7 @@ description: 记录一次生产环境Mysql迁移记录
 ## one more thing
 
 还有一点需要注意，有时设置了各项参数调整之后，Mysql反应还是很慢，这时候可以查看磁盘使用情况，有可能是磁盘容量不够，限制了读写导致查询效率低。
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

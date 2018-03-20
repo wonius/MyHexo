@@ -12,7 +12,7 @@ description: Mysql常见问题
 
 ​	今天在DB里用普通用户做操作时，会报这个错误。主要是因为user表中有匿名用户，将匿名用户删除就可以了。
 
-```mysql
+```
 #首先进入mysql
 mysql -uroot -p
 
@@ -35,7 +35,7 @@ service mysqld restart
 
 ​	一般由于密码错误，或者有用户没有密码的情况。	可以先设置成无密码模式进入，再将有问题的用户进行调整。
 
-```mysql
+```
 #修改my.cnf
 vim /etc/my.cnf
 #在[mysqld]中加入
@@ -63,3 +63,4 @@ service mysqld restart
 
 
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

@@ -15,7 +15,7 @@ description: 当使用Mybatis中的association标签时，发现会将返回对�
 
 我DAO接口返回的数据格式为 `List<Map<String, Object>>`，Map中的数据对象为如下，Book是一个实体。
 
-```mysql
+```
 	<resultMap type="HashMap" id="PushInfo">
         <result column="id" property="id"/>
         <result column="pushDate" property="pushDate"/>
@@ -31,7 +31,7 @@ description: 当使用Mybatis中的association标签时，发现会将返回对�
 
 实际返回的结果，出现了格式不一致的问题:
 
-```json
+```
 	{
         "pushDate": 1494645459000,
         "book": {			//该处，book是实体对象，是正常的
@@ -94,3 +94,9 @@ description: 当使用Mybatis中的association标签时，发现会将返回对�
 但是感觉跟数据类型也有关系
 
 以后有空看看这部分的源码
+
+
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

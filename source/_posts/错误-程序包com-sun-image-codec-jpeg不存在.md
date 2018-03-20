@@ -1,5 +1,5 @@
 ---
-title: '错误: 程序包com.sun.image.codec.jpeg不存在'
+ztitle: '错误: 程序包com.sun.image.codec.jpeg不存在'
 date: 2017-09-18 17:51:00
 tags: Java
 categories: JAVA
@@ -19,7 +19,7 @@ description: 程序包com.sun.image.codec.jpeg不存在
 
 ​	度娘了一下，maven的插件maven-compiler-plugin在编译的时候，没有加载/jre/lib内的包。而我们用到的JPEGCodec等类，恰好在/jre/lib/rt.jar包内。为了解决该问题，我们可以使用bootclasspath标签。该标签会将你指定路径下的包，通知到maven进行加载。
 
-```xml-dtd
+```
 <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-compiler-plugin</artifactId>
@@ -48,5 +48,7 @@ Attention:
 
    ​
 
+   ​
 
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

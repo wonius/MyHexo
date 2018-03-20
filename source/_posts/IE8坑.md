@@ -11,7 +11,7 @@ description: IE8遇到的一些坑
 
 ​	当new Date()时，IE8与IE11产生的结果不同。
 
-```javascript
+```
 //IE8，date1格式为‘2017年8月23日’。当将该参数传递到rest接口时，无法绑定到date类型
 //另外，使用oracle的to_date()方法时，to_date('', 'yyyy"年"MM"月"dd"日"')
 var date1 = new Date();
@@ -50,7 +50,7 @@ for(var i in params) {
 
 1. 在使用for..in时，使用 hasOwnProperty() 对变量进行判断：
 
-   ```javascript
+   ```
    for(var i in params) {
      if(params.hasOwnProperty(params[i]))
        console.log(params[i].length);
@@ -61,10 +61,17 @@ for(var i in params) {
 
 2. for循环的另一种写法：
 
-   ```javascript
+   ```
    for(var i = 0; i < params.length; i++) {
        console.log(params[i].length);
    }
    ```
 
 3. 使用框架封装好的接口，_.forEach，如果不想引入框架，可以自己写一个forEach函数。
+
+
+
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

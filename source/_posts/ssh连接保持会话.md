@@ -1,18 +1,19 @@
 ---
-title: ssh连接保持会话
+title: SSH连接保持会话
 date: 2018-02-03 14:02:23
 tags: 
 - Linux
-- ssh
-- macOS
+- SSH
 categories: 
 - 运维
 keywords: 
 - Linux
 - ssh
 - macOS
-description: ssh连接保持会话，不自动中断
+description: SSH连接保持会话、设置别名
 ---
+
+## 会话保持	
 
 ​	相信玩服务器的朋友都遇到过这个问题，终端里的ssh连接服务器经常超时，自动断开链接； 而又不想专门下载一个ssh客户端，一方面是因为安全问题，另一方面是觉得有些鸡肋。所以查了一下能否将ssh的会话保持住，不自动断开连接，还真有。
 
@@ -33,3 +34,30 @@ ServerAliveCountMax 10
 
 Host * :Host后面加的是服务器ip、ip端，*代表所有服务器
 
+## 设置别名
+
+​	为经常访问的服务器设置别名，就不用每次都写全信息了。同样，还是编辑ssh_config文件
+
+```
+//添加，后保存退出
+Host prd
+HostName 120.52.145.22
+User log
+IdentitiesOnly yes
+IdentityFile  ~/.ssh/id_rsa.pub
+
+//使用别名登录(如果不行重启下ssh服务:sudo service ssh reload)
+ssh prd
+```
+
+其中，Host、HostName、User为必须，其他可以根据自己需要配置。各属性含义如下：
+
+- Host 别名
+- HostName 指定登录的主机名或IP地址
+- Port 指定登录的端口号
+- User 登录用户名
+- IdentityFile 登录的公钥文件（如果是pem文件，可以将pem添加到ssh，ssh-add命令）
+- IdentitiesOnly 只接受SSH key 登录
+- PubkeyAuthentication
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

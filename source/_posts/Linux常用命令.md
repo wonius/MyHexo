@@ -17,7 +17,9 @@ description: Linux常用命令
 
 1. cat、head/tail组合
 
-   ```shell
+   ​
+
+   ```
    //查看前1000行
    head -n 1000 filename
    //查看后1000行
@@ -35,7 +37,7 @@ description: Linux常用命令
 
 2. grep
 
-   ```shell
+   ```
    //匹配文件中所有foo关键字上下1000行
    grep -C 1000 foo filename
 
@@ -48,20 +50,24 @@ description: Linux常用命令
 
 3. sed
 
-   ```Shell
-   //显示第1000到3000行的数据
-   sed -n '1000,3000p' filename
-   ```
+```
+//显示第1000到3000行的数据
+sed -n '1000,3000p' filename
+```
+
+
+
+
 
 ## find-文件搜索
 
-```shell
+```
 find / -name filename
 ```
 
 ## ps-查找进程
 
-```shell
+```
 ps -ef | grep XXX
 
 kill -9 pid
@@ -77,7 +83,7 @@ scp file user@localhost:dir
 
 1. 压缩
 
-```shell
+```
 #只打包
 tar -cvf file.tar file
 #使用gzip压缩，再打包
@@ -95,7 +101,7 @@ zip file.zip file
 
 2. 解压
 
-```shell
+```
 #解压常规包
 tar -xvf file.tar
 #解压gzip包
@@ -113,7 +119,7 @@ unzip file.zip
 
 3. 参数解析
 
-```shell
+```
 #必须参数，且只能选一个
 -c:	建立压缩文档
 -x:	解压
@@ -134,8 +140,33 @@ unzip file.zip
 
 ## 创建软连接
 
-```shell
+```
 #源文件指要被链接的文件，目标文件指新建的软连接
 ln -s 源文件 目标文件
 ```
 
+##  匹配进程并kill
+
+```
+//查找hello相关进程并kill
+ps -ef |grep hello |awk '{print $2}'|xargs kill -9
+```
+
+## sed: 替换文本
+
+```
+//将book替换为books
+sed 's/book/books/g' file
+```
+
+## 查看文件大小
+
+```
+du -sh *
+```
+
+
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

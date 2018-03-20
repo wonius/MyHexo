@@ -21,7 +21,7 @@ $50*1024*1024/100=524288$, 约50w条数据。所以当表中数据量小于50w�
 
 众所周知，Oracle分页的写法比较麻烦，需要用嵌套查询的方式。举个🌰：
 
-```sql
+```
 Select * from 
 (
 	select rownum rowno, t.* 
@@ -37,7 +37,7 @@ Select * from
 
 另外还有一种写法，使用between：
 
-```Sql
+```
 select rownum, w.* 
 from worker w
 where 
@@ -52,7 +52,7 @@ rownum between 1 and 10;
 
 比如我们有个场景，需要根据id批量更新某个值。一般都是会将id放到list中，将list作为参数传入。
 
-```sql
+```
 update worker
 set status = "Y"
 where id in
@@ -73,7 +73,7 @@ where id in
 
    将整个sql循环，而不是参数。例如入参是有100个参数的list，循环创建出100条update语句，参数固定为一个，形式如下：
 
-   ```sql
+   ```
    <foreach collection=list item="item" index="index" open="begin" close=";end;" separator=";">
    update worker 
    set status = "Y"
@@ -82,3 +82,5 @@ where id in
    ```
 
    ​
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

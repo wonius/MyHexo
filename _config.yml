@@ -98,3 +98,10 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
