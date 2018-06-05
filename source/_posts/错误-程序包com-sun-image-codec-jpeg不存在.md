@@ -1,12 +1,13 @@
 ---
-ztitle: '错误: 程序包com.sun.image.codec.jpeg不存在'
+title: com.sun.image.codec.jpeg不存在
 date: 2017-09-18 17:51:00
 tags: Java
 categories: JAVA
 keywords: 
 - Java
 - JPEGCodec
-description: 程序包com.sun.image.codec.jpeg不存在
+description: com.sun.image.codec.jpeg不存在
+copyright: true
 ---
 
 ## 问题
@@ -44,11 +45,6 @@ Attention:
 
    {% asset_img JAVA_HOME_ERROR.png IDEA下JAVA_HOME显示为红色%}
 
-2. 当bootclasspath标签内，有多个变量时，Mac/Linux系统以 ：分隔，Windows系统以 ; 分隔。否则也会有异常。
-
-   ​
-
-   ​
+2. 当bootclasspath标签内，有多个变量时，Mac/Linux系统以 ：分隔，Windows系统以 ; 分隔。否则也会有异常。​
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

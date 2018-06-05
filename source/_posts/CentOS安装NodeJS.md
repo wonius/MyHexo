@@ -3,12 +3,13 @@ title: CentOS安装NodeJS
 date: 2018-02-06 11:09:48
 tags: 
 - CentOS
-- NodeJS
-categories: NodeJS
+- Node
+categories: Node
 keywords: 
-- NodeJS
+- Node
 - CentOS
 description: CentOS安装NodeJS方法
+copyright: true
 ---
 
 ​	最近需要在服务器上安装nodejs，网上搜了一下，文章都是转来转去，都出到9.x版本了还在讲如何装6.x，很无语。所以自己整理一下。
@@ -37,7 +38,3 @@ npm -v
 ### one more thing
 
 ​	除了在线安装，还有下载安装包、加压、编译安装的方法，操作繁琐，不推荐。
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

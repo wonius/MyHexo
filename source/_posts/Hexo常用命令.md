@@ -1,10 +1,11 @@
 ---
-title: Hexo常用命令
+title: Hexo相关配置
 date: 2017-12-18 22:09:22
-tags: hexo
-categories: 笔记
+tags: Hexo
+categories: Hexo
 keywords: Hexo
 description: Hexo常用命令
+copyright: true
 ---
 
 ## 创建新文档
@@ -32,8 +33,41 @@ hexo g && hexo d
 hexo clean
 ```
 
+## 部署到vps
 
+一般使用Hexo搭建blog，都是采用Hexo+Github的结构，但是由于Github屏蔽了百度的爬虫，所以建好的blog百度搜不到，满足不了知识分享（装逼）的需求。解决办法有很多，最简单的就是买一块vps，将blog直接推送到自己的vps上。
 
+```
+//安装hexo-deployer-rsync
+npm install hexo-deployer-rsync --save
 
+//修改Hexo中的_confg.xml的deploy
+- type: git
+  repo:
+      github: https://github.com/XXXX/xxxx.github.io.git 
+      coding: https://git.coding.net/XXXX/xxxx.git
+  branch: master
+- type: rsync
+  host: 140.143.251.238
+  user: root
+  root: /data/www/hexo
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
+  
+//生成并部署
+hexo g && hexo d
+```
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+参数讲解：
+
+| 参数                | 描述          | 默认值  |
+| ----------------- | ----------- | ---- |
+| **host**          | 远程主机的地址     |      |
+| **user**          | 使用者名称       |      |
+| **root**          | 远程主机的根目录    |      |
+| **port**          | 端口          | 22   |
+| **delete**        | 删除远程主机上的旧文件 | true |
+| **verbose**       | 显示调试信息      | true |
+| **ignore_errors** | 忽略错误        | true |

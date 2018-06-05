@@ -5,6 +5,7 @@ tags: IE8
 categories: BS
 keywords: IE8
 description: IE8遇到的一些坑
+copyright: true
 ---
 
 ## new Date()
@@ -69,9 +70,3 @@ for(var i in params) {
 
 3. 使用框架封装好的接口，_.forEach，如果不想引入框架，可以自己写一个forEach函数。
 
-
-
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

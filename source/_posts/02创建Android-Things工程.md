@@ -5,6 +5,7 @@ tags: Android-Things
 categories: IoT
 keywords: Android-Things
 description: 创建Android Things工程
+copyright: true
 ---
 
 

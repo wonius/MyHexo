@@ -87,11 +87,19 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo:
       github: https://github.com/wonius/wonius.github.io.git 
       coding: https://git.coding.net/GGavin/wonius.git
   branch: master
+- type: rsync
+  host: 140.143.251.238
+  user: root
+  root: /data/www/hexo
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
 
 # hexo sitemap网站地图
 sitemap:

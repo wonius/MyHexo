@@ -2,12 +2,31 @@
 title: Git学习笔记
 date: 2017-07-14 00:06:02
 tags: Git
-categories: 笔记
+categories: Git
 keywords: Git
 description: Git常用命令
+copyright: true
 ---
 
+## 本地代码初始化到远程仓库
+
+```
+//create a new repository on the command line
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/wonius/XXXXXX.git
+git push -u origin master
+
+//push an existing repository from the command line
+git remote add origin https://github.com/wonius/MySpringBootDemo.git
+git push -u origin master
+```
+
+
+
 ## 更新代码时，本地冲突无法更新
+
 错误信息：
 > error: Your local changes to the following files would be overwritten by merge:
 >
@@ -156,9 +175,3 @@ git config -e
 ## 常用命令
 
 [Git常用命令](https://git-scm.com/docs)
-
-
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。

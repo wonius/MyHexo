@@ -2,14 +2,15 @@
 title: CentOS安装zsh和oh-my-zsh
 date: 2017-12-18 22:05:54
 tags: 
-- shell
+- Shell
 - zsh
 categories: Linux
 keywords: 
-- CentOs
+- CentOS
 - zsh
 - oh-my-zsh
-description: CentOs安装zsh和oh-my-zsh
+description: CentOS安装zsh和oh-my-zsh
+copyright: true
 ---
 
 ### 查看系统当前的shell
@@ -210,7 +211,7 @@ vim ~/.zshrc
 
 ```
 //安装插件
-git clonehttps://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 //添加配置
 vim ~/.zshrc
@@ -234,7 +235,3 @@ https://github.com/wting/autojump
 #### 更多插件
 
 https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://wonius.top/" property="cc:attributionName" rel="cc:attributionURL">Gavin</a>采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
