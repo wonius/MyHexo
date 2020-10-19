@@ -2,7 +2,7 @@
 title: Mybatis使用association，结果返回数组
 date: 2017-10-14 21:04:57
 tags: Mybatis
-categories: DB
+categories: Backend
 keywords: 
 - Mybatis
 - association

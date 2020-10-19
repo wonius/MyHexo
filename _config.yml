@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Gavin's Notes 
-subtitle: 
-description: 自留地儿
+title: Gavin's Notes
+subtitle: 自留地儿
+description: 
 author: Gavin 
 language: zh-Hans
 timezone:
@@ -90,7 +90,7 @@ deploy:
 - type: git
   repo:
       github: https://github.com/wonius/wonius.github.io.git 
-      coding: https://git.coding.net/GGavin/wonius.git
+#      coding: https://git.coding.net/GGavin/wonius.git
   branch: master
 - type: rsync
   host: 140.143.251.238
@@ -113,3 +113,15 @@ search:
   field: post
   format: html
   limit: 10000
+
+
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true

@@ -2,9 +2,8 @@
 title: CentOS安装NodeJS
 date: 2018-02-06 11:09:48
 tags: 
-- CentOS
 - Node
-categories: Node
+categories: Frontend
 keywords: 
 - Node
 - CentOS

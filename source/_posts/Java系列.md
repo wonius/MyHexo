@@ -1,14 +1,14 @@
 ---
-title: Java系列
+title: JVM
 date: 2017-07-29 23:46:10
-tags: Java
-categories: JAVA
-keywords: Java
-description: Java
+tags: JVM
+categories: Java
+keywords: JVM
+description: Java虚拟机的一些文章
 copyright: true
 ---
 
-# Java虚拟机
+# JVM
 
 ### Blog
 - [兰亭风雨|深入Java虚拟机](http://blog.csdn.net/mmc_maodun/article/category/1823903)

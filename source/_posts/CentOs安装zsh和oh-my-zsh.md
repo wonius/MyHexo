@@ -4,7 +4,7 @@ date: 2017-12-18 22:05:54
 tags: 
 - Shell
 - zsh
-categories: Linux
+categories: Shell
 keywords: 
 - CentOS
 - zsh

@@ -2,7 +2,7 @@
 title: IE8下，a标签触发onbeforeunload事件
 date: 2017-08-03 22:06:26
 tags: onbeforeunload
-categories: BS
+categories: Frontend
 keywords: 
 - IE8
 - onbeforeunload

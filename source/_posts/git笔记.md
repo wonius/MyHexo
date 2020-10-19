@@ -2,7 +2,7 @@
 title: Git学习笔记
 date: 2017-07-14 00:06:02
 tags: Git
-categories: Git
+categories: 版本管理
 keywords: Git
 description: Git常用命令
 copyright: true
@@ -150,6 +150,9 @@ git pull origin master ----allow-unrelated-histories
 git remote add github https://*****.git
 git remote add gitlab https://*****.git
 
+// 删除别名
+git remote remove github
+
 //推送
 git push github master:master
 //如果是新建的仓库，需要加-f参数
@@ -168,9 +171,50 @@ git push
 git config -e
 ```
 
+## 修改远程仓库地址
 
+1. 命令修改
 
+   ```
+   git remote set-url origin http://*****.git
+   ```
 
+2. 先删除再添加
+
+   ```
+   git remote rm origin
+   git remote add origin http://*****.git
+   ```
+
+3. 配置文件修改
+
+   ```
+   cd ***/.git
+   vim config
+   # 然后修改
+   ```
+
+## rebase提交
+
+通常我们都会拉取分支，提交代码时从自己分支往主分支上merge，当分支比较多时，分支树会显得很乱。
+
+使用rebase，将自己分支每次重置为主分支记录，再提交，全程只有主分支的提交历史，比较清晰
+
+```
+git add .
+git commit -m "*****"
+git rebase master(主分支)
+git rebase --continue
+git push
+```
+
+## 修改commit内容
+
+```
+git commit --amend
+# 修改内容
+git push -f
+```
 
 ## 常用命令
 

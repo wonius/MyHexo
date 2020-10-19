@@ -2,7 +2,7 @@
 title: IE8遇到的坑
 date: 2017-08-23 22:06:26
 tags: IE8
-categories: BS
+categories: Frontend
 keywords: IE8
 description: IE8遇到的一些坑
 copyright: true
@@ -58,7 +58,7 @@ for(var i in params) {
    }
    ```
 
-   ​
+   
 
 2. for循环的另一种写法：
 
