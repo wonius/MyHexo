@@ -2,24 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7de53977-0319-4137-99df-6372e7511f79" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/10ssh-add.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/11ssh2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/1主机.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/2镜像.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/3实例.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/4配置.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/5存储.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/6标签.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/7安全组.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/8AwsKeyPair.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/AWS免费EC2创建记录/9ssh.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/BlockChain入门.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Docker.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Dockerfile与Maven参数间的那点事儿.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Dockerfile记录.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Docker问题记录.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/GDD2018.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/GPU安装Docker环境.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Hexo-腾讯云开启https.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Hexo升级记录.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/JSON类库对比.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Java 常用Java程序片段.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Java-lombok应用.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Java常见报错.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Jpa中使用-Scheduled报no-transaction-is-in-progress.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/K8S.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Linux文件MD5生成.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Linux服务器常用服务.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/ML中的Loss函数.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/MacOS安装Matlab.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/MacOS搭建Aria2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Maven生命周期.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Nginx备忘录.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Node对session的处理、进程间通信.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Node更换npm镜像.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Node相关.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Oracle彻底删除某database.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Oracle编码问题.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Oracle高可用架构.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Python2与Python3差异.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Python规范.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/RDBMS那点事儿之Undo-log、Redo-log和binlog.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Redis-Session管理.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Redisson异常.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Redis主备自动切换高可用方案.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Redis常用命令.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Redis批量改名key.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SSH通过Key登录服务器.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Solr演练.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot多实例监控redis-key失效事件.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot常见报错.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot常见报错/idea_maven_jar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot常见报错/maven_jar.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot相关资料.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot集成MockServer.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot集成Swagger2.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringBoot集成TestNG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud概述.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud概述/Bus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud概述/Eureka.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud概述/Hystrix.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud概述/SpringCloud.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud相关资料.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud项目搭建.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud项目搭建/eureka.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud项目搭建/parent.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud项目搭建/run.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringCloud项目搭建/service.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/SpringRedisData中事务的坑.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Spring注入static变量.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Spring集成HanLP分词.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/TensorFlow-API.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/TensorFlow四种Cross-Entropy算法实现与应用.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Vimium快捷键.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/ZK那点事儿.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/iOS12-Beta升级.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/iTerm主题配色.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/iTerm主题配色/color.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/json.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/kubectl常用命令.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/pip2与pip3无法并存共用问题.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/solr高亮优化.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/vim键位介绍.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/vim键位介绍/vim.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-Apollo自动驾驶.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-Apollo自动驾驶/Apollo自动驾驶工程师技能图谱.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-前端.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-前端/技能图谱-前端工程师.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-后端.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-后端/back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-大数据.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-大数据/大数据工程师技能图谱.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-机器学习.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/技能图谱-机器学习/技能图谱-机器学习.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/服务器搭建shadowsocks服务.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬不能吃的的那些好吃的.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬养成.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬养成/bug.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬养成/weight.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬回家前的准备.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬挑选.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬疫苗那些事儿.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬疫苗那些事儿/crazydog.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬疫苗那些事儿/meiliya.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬疫苗那些事儿/weijia.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬疫苗那些事儿/yingtewei.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/source/_posts/柴犬驱虫.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/CentOS安装NodeJS.md" afterPath="$PROJECT_DIR$/source/_posts/CentOS安装NodeJS.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/CentOs安装zsh和oh-my-zsh.md" afterPath="$PROJECT_DIR$/source/_posts/CentOs安装zsh和oh-my-zsh.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/IE8下，a标签触发onbeforeunload事件.md" afterPath="$PROJECT_DIR$/source/_posts/IE8下，a标签触发onbeforeunload事件.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/IE8坑.md" afterPath="$PROJECT_DIR$/source/_posts/IE8坑.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/JSON转换.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Java系列.md" afterPath="$PROJECT_DIR$/source/_posts/Java系列.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Linux常用命令.md" afterPath="$PROJECT_DIR$/source/_posts/Linux常用命令.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Mybatis使用association，结果返回数组-1.md" afterPath="$PROJECT_DIR$/source/_posts/Mybatis使用association，结果返回数组-1.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/git笔记.md" afterPath="$PROJECT_DIR$/source/_posts/git笔记.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/工欲善其事，必先利其器.md" afterPath="$PROJECT_DIR$/source/_posts/工欲善其事，必先利其器.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/技术栈.md" afterPath="$PROJECT_DIR$/source/_posts/技术栈.md" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/阿里云ECS升级HTTPS.md" afterPath="$PROJECT_DIR$/source/_posts/阿里云ECS升级HTTPS.md" />
-      <change beforePath="$PROJECT_DIR$/themes/next" afterPath="$PROJECT_DIR$/themes/next" />
-      <change beforePath="$PROJECT_DIR$/themes/next/layout/_partials/footer.swig" afterPath="$PROJECT_DIR$/themes/next/layout/_partials/footer.swig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +127,8 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3828">
-              <caret line="248" column="7" lean-forward="false" selection-start-line="248" selection-start-column="4" selection-end-line="248" selection-end-column="7" />
+            <state relative-caret-position="237">
+              <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -174,13 +268,13 @@
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,7 +424,7 @@
       <workItem from="1584590888873" duration="1264000" />
       <workItem from="1602646790033" duration="489000" />
       <workItem from="1602928267839" duration="385000" />
-      <workItem from="1603093521038" duration="641000" />
+      <workItem from="1603093521038" duration="1142000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1517899802767</created>
@@ -353,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528164460415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1603118932267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603118932267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21600000" />
+    <option name="totallyTimeSpent" value="22101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -777,8 +878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3828">
-          <caret line="248" column="7" lean-forward="false" selection-start-line="248" selection-start-column="4" selection-end-line="248" selection-end-column="7" />
+        <state relative-caret-position="237">
+          <caret line="59" column="8" lean-forward="true" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
           <folding />
         </state>
       </provider>
