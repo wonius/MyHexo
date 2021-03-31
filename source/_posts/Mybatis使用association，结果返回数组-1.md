@@ -16,7 +16,7 @@ copyright: true
 
 我DAO接口返回的数据格式为 `List<Map<String, Object>>`，Map中的数据对象为如下，Book是一个实体。
 
-```
+```sql
 	<resultMap type="HashMap" id="PushInfo">
         <result column="id" property="id"/>
         <result column="pushDate" property="pushDate"/>
@@ -32,7 +32,7 @@ copyright: true
 
 实际返回的结果，出现了格式不一致的问题:
 
-```
+```json
 	{
         "pushDate": 1494645459000,
         "book": {			//该处，book是实体对象，是正常的
@@ -76,7 +76,7 @@ copyright: true
 
 新建了BookPush实体类，指定book类型。
 
-```
+```sql
 	<resultMap type="BookPush" id="PushInfo">
         <result column="id" property="id"/>
         <result column="pushDate" property="pushDate"/>

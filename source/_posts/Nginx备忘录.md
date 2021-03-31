@@ -10,7 +10,7 @@ description: nginx的一些信息
 
 # 安装
 
-```shell
+```bash
 # centos
 yum install nginx
 # ubuntu
@@ -25,7 +25,7 @@ make & make install
 
 # 相关命令
 
-```shell
+```bash
 # mac中nginx默认安装在/usr/local/Cellar/nginx，同时也会加入到/usr/local/bin，进入
 # 启动。默认加载conf中的nginx.conf配置文件
 ./nginx 或 ./nginx -s start
@@ -42,7 +42,7 @@ nginx -t
 
 # 目录结构
 
-```shell
+```bash
 # nginx目录下
 confg/	# 配置文件目录
 logs/	# 日志目录
@@ -55,7 +55,7 @@ conf.d/	# 有些安装完成之后会有这个目录，也是配置目录。ngin
 
 使用mac的brew安装，目录在/usr/local/etc/nginx
 
-```shell
+```nginx
 main
 events {
   ....
@@ -89,7 +89,7 @@ nginx配置文件主要分为六个区域：
 
 main是全局配置：
 
-```shell
+```nginx
 user nobody nobody;
 worker_processes auto;
 
@@ -114,7 +114,7 @@ worker_rlimit_nofile 100000;
 
 events模块来用指定nginx的工作模式和工作模式及连接数上限：
 
-```shell
+```nginx
 events {
     use kqueue; #mac平台
     worker_connections  1024;
@@ -130,7 +130,7 @@ events {
 
 http模块是最核心的模块，它负责HTTP服务器相关属性的配置，主要包含server和upstream子模块。
 
-```shell
+```nginx
 http{
     include       mime.types;
     default_type  application/octet-stream;
@@ -165,7 +165,7 @@ http{
 
 `tcp_nodelay` 告诉nginx不要缓存数据，而是一段一段的发送。当需要及时发送数据时，就应该给应用设置这个属性，这样发送一小块数据信息时就不能立即得到返回值。`tcp_nopush`和`tcp_nodelay`两个指令设置为on用于防止网络阻塞。
 
-```shell
+```nginx
 http{
 	······
 	
@@ -198,7 +198,7 @@ http{
 
 `limit_conn` 设置addr的最大连接数为100，每个ip最多同时开100个连接。
 
-```shell
+```nginx
 http{
 	······
 	
@@ -231,7 +231,7 @@ http{
 
 `gzip_types`设置需要压缩的数据格式。
 
-```shell
+```nginx
 http{
 	······
 	
@@ -257,7 +257,7 @@ http{
 
 server模块是http的子模块，用来定义虚拟主机的配置。一个http中可以有多个server。
 
-```shell
+```nginx
 server {
         listen       8080;
         server_name  localhost 127.0.0.1 www.xxx.com;
@@ -286,7 +286,7 @@ nginx中最核心的模块，用来配置请求的路由，以及各种页面的
 
 location的url匹配具有一定优先级，其优先级如下：
 
-```shell
+```nginx
 location [ = | ~ | ~* | ^~ ]  uri  { }
 # =开头表示精确匹配
 # ^~ 开头表示uri以某个常规字符串开头，这个不是正则表达式
@@ -302,7 +302,7 @@ location [ = | ~ | ~* | ^~ ]  uri  { }
 
 语法方面，主要有：
 
-```shell
+```nginx
 location /static {
     root   /var/app/www;
     # alias  /var/app/www; 
@@ -323,7 +323,7 @@ location /static {
 
 `proxy_pass` 反向代理配置，代理请求。其具体用法：
 
-```shell
+```nginx
 # 当访问http://127.0.0.1/proxy/1.png时
 
 # 代理到http://127.0.0.2/1.png
@@ -351,7 +351,7 @@ location /proxy/ {
 
 upstream模块负责负载均衡。
 
-```shell
+```nginx
 upstream baidu.com{
     ip_hash;	# 负载算法
     server xx:xx:xx:1:8080;		# server列表
@@ -387,7 +387,7 @@ upstream baidu.com{
 
 # 例子 
 
-```shell
+```nginx
 ########### 每个指令必须有分号结束。#################
 
 #配置用户或者组，默认为nobody nobody。
@@ -578,7 +578,7 @@ http {
 
 # 内置全局变量
 
-```shell
+```bash
 $args ：这个变量等于请求行中的参数，同$query_string
 $content_length ： 请求头中的Content-length字段。
 $content_type ： 请求头中的Content-Type字段。

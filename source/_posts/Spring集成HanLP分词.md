@@ -12,7 +12,7 @@ description: Spring集成HanLP分词，支持用户自定义字典
 
 # 配置pom文件
 
-```
+```xml
 <dependency>
     <groupId>com.hankcs</groupId>
     <artifactId>hanlp</artifactId>
@@ -30,7 +30,7 @@ description: Spring集成HanLP分词，支持用户自定义字典
 
 # 编写Java类
 
-```
+```java
 public class WordUtil {
 
     public static final String CUSTOM_DICTIONARY_PATH = "/hanlp/custom/CustomDic.txt";

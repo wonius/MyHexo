@@ -14,7 +14,7 @@ copyright: true
 
 ### 删除Mysql
 
-```
+```bash
 //备份数据
 mysqldump -u xxx -h xxx -P 3306 -p --all-databases > databases.sql
 mysqldump -u xxx -h xxx -P 3306 -p *** > ***.sql
@@ -38,7 +38,7 @@ yum remove ***
 
 ### 重装Mysql
 
-```
+```bash
 //重新安装
 yum install mysql mysql-server mysql-libs
 ```
@@ -47,7 +47,7 @@ yum install mysql mysql-server mysql-libs
 
 ### 升级高版本Mysql
 
-```
+```bash
 //查看系统信息，el版本、i686还是x86——64等
 uname -r
 
@@ -78,3 +78,4 @@ ALTER USER ‘root'@'localhost' IDENTIFIED BY '你的密码'
 //将Mysql加到服务自启动
 chkconfig mysqld on
 ```
+

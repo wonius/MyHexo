@@ -14,7 +14,7 @@ copyright: true
 
 ​	当使用mysql -uroot -p命令登录时，报
 
-```
+```mysql
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
 ```
 
@@ -22,7 +22,7 @@ ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib
 
 ​	怀疑服务没有启动，启动服务时service mysqld start，报
 
-```
+```mysql
 MySQL Daemon failed to start.
 
 Starting mysqld:   [FAILED]
@@ -32,7 +32,7 @@ Starting mysqld:   [FAILED]
 
 ​	百度了一下，有的说没有权限，需要授权，有的说需要在/etc/my.cnf中加配置。试过都不行。最后尝试将mysql所有文件删掉，杀掉所有进程重启，终于成功。
 
-```
+```bash
 //删除文件、自启服务、杀掉进程
 rm -rf /var/lib/mysql/
 rm /var/lock/subsys/mysqld
@@ -46,7 +46,7 @@ service mysqld start
 
 ​	除了以上情况出现“ERROR 2002 (HY000) Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)”报错，还有另外一种情况，已经安装好mysql服务，然后将mysql移动到另外的目录，启动mysql时找不到mysql.sock，是因为my.cnf中配置的路径还是原来的目录，将my.cnf中的配置修改就可以了
 
-```
+```bash
 #编辑my.cnf，事先可以使用cp命令备份
 vim /etc/my.cnf
 
@@ -58,3 +58,4 @@ socket=/data1/mysql/mysql.sock
 [mysql]
 socket=/data1/mysql/mysql.sock
 ```
+

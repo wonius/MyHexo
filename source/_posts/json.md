@@ -10,7 +10,7 @@ description: Json处理过程中遇到的坑
 
 # @JsonIgnore
 
-```
+```java
 @Data
 public class Student {
     
@@ -29,3 +29,4 @@ public class Student {
 （忽略命名规范）上述代码在序列化、反序列化时，都会导致name属性被忽略。
 
 除非在属性上添加@JsonProperty。
+

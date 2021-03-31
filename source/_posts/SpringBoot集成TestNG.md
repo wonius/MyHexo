@@ -16,7 +16,7 @@ description: SpringBoot集成TestNG
 
 ## 增加dependency
 
-```
+```xml
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -27,7 +27,7 @@ description: SpringBoot集成TestNG
 
 ## 配置maven-surefire-plugin
 
-```
+```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
@@ -43,7 +43,7 @@ description: SpringBoot集成TestNG
 
 ## 增加MyTestNG.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
     <test name="test1" verbose="2">

@@ -25,7 +25,7 @@ copyright: true
 
 &emsp;&emsp;因此，在做insert、update操作时，用decode进行处理，即可将true/false转换成自己想要的值。我通常用Y/N表示状态。
 
-```
+```sql
 decode(#{enabled}, 1, 'Y', 'N')
 ```
 
@@ -42,6 +42,6 @@ decode(#{enabled}, 1, 'Y', 'N')
 &emsp;&emsp;所以当你希望将ResultSet中的某个属性转换为boolean类型时，可以使用如下方式。enabled为字段名称。
 
 
-```
+```sql
 decode(enabled, 'Y', 1, 'N', 0) enabled
 ```

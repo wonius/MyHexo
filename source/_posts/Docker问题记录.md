@@ -35,7 +35,7 @@ description: 容器内权限正常，无权限创建目录
 
 后来发现，貌似和tomcat版本有关，9.0版本普遍存在这个问题，跟镜像分层有关。
 
-```shell
+```dockerfile
 FROM centos:7.2.1511
 COPY apache-tomcat-9.0.30.tar.gz /opt/
 # 之前的dockerfile，解压与授权通过两条RUN执行，在不同层级，权限有问题
@@ -52,3 +52,4 @@ RUN cd /opt \
 ```
 
 https://github.com/docker-library/tomcat/issues/35
+

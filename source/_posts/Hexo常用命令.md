@@ -10,26 +10,26 @@ copyright: true
 
 ## 创建新文档
 
-```shell
+```bash
 hexo new filename
 ```
 
 ## 启动本地服务
 
-```
+```bash
 #启动本地服务，然后访问http://localhost:4000/
 hexo s
 ```
 
 ## 重新编译并且发布
 
-```
+```bash
 hexo g && hexo d
 ```
 
 ## 清理缓存
 
-```
+```bash
 hexo clean
 ```
 
@@ -37,7 +37,7 @@ hexo clean
 
 一般使用Hexo搭建blog，都是采用Hexo+Github的结构，但是由于Github屏蔽了百度的爬虫，所以建好的blog百度搜不到，满足不了知识分享（装逼）的需求。解决办法有很多，最简单的就是买一块vps，将blog直接推送到自己的vps上。
 
-```
+```bash
 //安装hexo-deployer-rsync
 npm install hexo-deployer-rsync --save
 

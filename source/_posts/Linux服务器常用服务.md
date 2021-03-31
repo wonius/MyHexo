@@ -17,7 +17,7 @@ copyright: true
 
 ## 加入定时任务
 
-```
+```bash
 #创建shell脚本
 vim bakup.sh
 
@@ -52,7 +52,7 @@ service crond restart
 
 1. chkconfig命令
 
-   ```
+   ```bash
    //首先查看要启动的服务是否在chkconfig列表中
    chkconfig --list
 
@@ -70,7 +70,7 @@ service crond restart
 
 2. 修改/etc/rc.d/rc.local
 
-   ```
+   ```bash
    //编辑rc.local
    vim /etc/rc.d/rc.local
 
@@ -78,4 +78,4 @@ service crond restart
    /etc/rc.d/init.d/mysqld start
    ```
 
-   ​
+   

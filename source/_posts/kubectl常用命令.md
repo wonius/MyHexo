@@ -10,30 +10,53 @@ keywords:
 description: kubectl常用命令
 ---
 
-# 查看pod
+# Pod
 
-```
+```bash
+# 查看所有pod
 kubectl get po -o wide
+
+# 查看pod启动日志
+kubectl logs xxx
+# 也可以写到文件中，查看方便
+kubectl logs xxx > xxx.log
+
+# 查看pod的详细信息
+kubectl describe po xxx
+
+# 进入pod内部
+kubectl exec -it xxx bash
 ```
 
-# 获取pod日志
+# Deployment
 
-```
-//写到文件中更方便查看
-kubectl logs **** > ***.log
-```
-
+```bash
 # 编辑deployment
-
-```
-kubectl edit deployments *** -o yaml
+kubectl edit deployments xxx -o yaml
 ```
 
-# 进入bash
+# Service
 
-实例已经启动
+```bash
+# 查看所有service
+kubectl get svc
 
+# 查看某个service
+kubectl describe svc xxx
 ```
-kubectl exec -it **** bash
+
+# ConfigMap
+
+```bash
+# 从文件创建configMap
+# AA：configMap的名称
+# BB：configMap中key的名称
+# CC.yml：源文件
+kubectl create cm AA --from-file=BB=CC.yml
+
+# 将configMap导出为yaml文件
+kubectl get cm AA -o yaml > BB.yaml
 ```
+
+# Ingress
 

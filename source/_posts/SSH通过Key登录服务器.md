@@ -17,16 +17,16 @@ copyright: true
 
 该步为可选，根据个人需要创建。不推荐直接使用root用户。
 
-```
-//创建用户
+```bash
+# 创建用户
 adduser gavin
 
-//设置密码
+# 设置密码
 passwd gavin
 
-//增加sudo权限
+# 增加sudo权限
 vim /etc/sudoers
-//添加下行
+# 添加下行
 gavin  ALL=(ALL)       ALL
 ```
 
@@ -38,14 +38,14 @@ gavin  ALL=(ALL)       ALL
 
 下为用rsa算法，在~/.ssh/下生成名为id_rsa.qcloud，注释为qcloud的Key：
 
-```
-//qcloud对应腾讯云，可以根据自己情况取名
+```bash
+# qcloud对应腾讯云，可以根据自己情况取名
 ssh-keygen -t rsa -f ~/.ssh/id_rsa.qcloud -C "qcloud"
 ```
 
 然后一路Enter（可以选择输入passphrase）
 
-```
+```bash
 cd ~/.ssh/
 ll
 ```
@@ -56,31 +56,31 @@ ll
 
 私钥存本地，公钥放到服务器
 
-```
-//用gavin用户登录服务器，创建.ssh目录
+```bash
+# 用gavin用户登录服务器，创建.ssh目录
 mkdir .ssh
 
-//本机拷贝到服务器
+# 本机拷贝到服务器
 scp -r ~/.ssh/id_rsa.qcloud.pub gavin@XXX.XXX.XXX.XXX:/home/gavin/.ssh/authorized_keys
 
-//修改服务器上.ssh、authorized_keys权限，仅当前用户可操作
+# 修改服务器上.ssh、authorized_keys权限，仅当前用户可操作
 chmod 700 .ssh
 chmod 600 .ssh/authorized_keys
 ```
 
 ## 服务器开启秘钥验证
 
-```
+```bash
 vim /etc/ssh/sshd_config
 
-//开启秘钥验证
+# 开启秘钥验证
 RSAAuthentication yes
 PubkeyAuthentication yes
 
-//另外可以关闭密码验证
+# 另外可以关闭密码验证
 PasswordAuthentication no
 
-//重启服务
+# 重启服务
 service sshd restart
 ```
 
@@ -88,10 +88,10 @@ service sshd restart
 
 前面设置完，就可以无密码登录了。不过每次都要输入服务器ip，比较反人类。可以进一步设置别名，使体验更友好。
 
-```
+```bash
 vim /etc/ssh/ssh_config (或者~/.ssh/ssh_config)
 
-//添加，保存退出
+# 添加，保存退出
 Host qcloud
 HostName XXX.XXX.XXX.XXX
 User gavin

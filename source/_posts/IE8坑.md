@@ -12,7 +12,7 @@ copyright: true
 
 ​	当new Date()时，IE8与IE11产生的结果不同。
 
-```
+```js
 //IE8，date1格式为‘2017年8月23日’。当将该参数传递到rest接口时，无法绑定到date类型
 //另外，使用oracle的to_date()方法时，to_date('', 'yyyy"年"MM"月"dd"日"')
 var date1 = new Date();
@@ -51,7 +51,7 @@ for(var i in params) {
 
 1. 在使用for..in时，使用 hasOwnProperty() 对变量进行判断：
 
-   ```
+   ```javascript
    for(var i in params) {
      if(params.hasOwnProperty(params[i]))
        console.log(params[i].length);
@@ -62,7 +62,7 @@ for(var i in params) {
 
 2. for循环的另一种写法：
 
-   ```
+   ```javascript
    for(var i = 0; i < params.length; i++) {
        console.log(params[i].length);
    }

@@ -30,7 +30,7 @@ description: 腾讯云+Hexo构建的博客系统，开启https证书认证
 
 2. 编辑nginx解析规则，添加443端口解析（编辑前记得备份，养成良好习惯）：
 
-   ```
+   ```nginx
    server {
            listen 443;
            server_name _; #填写绑定证书的域名
@@ -51,7 +51,7 @@ description: 腾讯云+Hexo构建的博客系统，开启https证书认证
 
 3. （可选）全站加密，http自动跳转https，修改80端口规则：
 
-   ```
+   ```nginx
    server {
            listen       80;
            server_name  _;

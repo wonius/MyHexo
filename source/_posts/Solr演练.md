@@ -36,7 +36,7 @@ description: Solr实战演练Part 1
 
 是因为用户访问权限不对，修改下权限就可以。我这里直接开了所有权限
 
-```
+```bash
 sudo chmod -R 777 /etc/solr-7.4.0
 ```
 
@@ -59,25 +59,25 @@ Solr目录中的example提供了基础数据，我们可以把这些基础数据
 
 ### 删除集合
 
-```
+```bash
 bin/solr delete -c techproducts
 ```
 
 ### 创建新集合
 
-```
+```bash
 bin/solr create -c <yourCollection> -s 2 -rf 2
 ```
 
 ### 停止
 
-```
+```bash
 bin/solr stop -all
 ```
 
 ### 重新启动
 
-```
+```bash
 bin/solr start -c -p 8983 -s example/cloud/node1/solr
 bin/solr start -c -p 7574 -s example/cloud/node2/solr -z localhost:9983
 ```

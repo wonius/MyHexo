@@ -34,7 +34,7 @@ jar包冲突，根据情况删除其中一个jar包。
 
 2、 如果你的idea没有这个功能，可以使用maven命令显示结构，是一个树状图
 
-```
+```bash
 mvn dependency:tree
 
 //生成结构如下：

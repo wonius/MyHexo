@@ -11,7 +11,7 @@ description: Spring注入static变量的两种方式。
 
 # 使用setter方法
 
-```
+```java
 @Service("userService")
 public class UserService implements IUserService {
 
@@ -27,7 +27,7 @@ public class UserService implements IUserService {
 
 # 在spring容器中注入对象时赋值
 
-```
+```java
 @Service("userService")
 public class UserService implements IUserService {
 

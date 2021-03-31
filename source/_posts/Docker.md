@@ -10,7 +10,7 @@ copyright: true
 
 # 安装Docker
 
-```
+```bash
 //源中有，直接yum安装
 yum install docker-io -y
 
@@ -26,7 +26,7 @@ chkconfig docker on
 
 # 配置Docker
 
-```
+```bash
 //设置腾讯云镜像源
 echo "OPTIONS='--registry-mirror=https://mirror.ccs.tencentyun.com'" >> /etc/sysconfig/docker
 
@@ -37,7 +37,7 @@ service docker restart
 
 # 安装镜像
 
-```
+```bash
 //拉取一个centos镜像
 docker pull centos
 
@@ -47,7 +47,7 @@ docker images
 
 # 运行镜像
 
-```
+```bash
 //运行docker容器中的centos，并使用bash shell
 docker run -it centos /bin/bash
 
@@ -63,7 +63,7 @@ exit
 
 # 保存镜像
 
-```
+```bash
 //查看容器信息，获取容器id
 docker ps -a
 
@@ -73,7 +73,7 @@ docker commit -m="你的备注" 容器id 镜像id
 
 # 打包镜像
 
-```
+```bash
 docker build -t imageName .
 
 // 查看镜像
@@ -82,7 +82,7 @@ docker images | grep imageName
 
 # 删除镜像
 
-```shell
+```bash
 docker images 
 docker rmi imageid
 
@@ -108,7 +108,7 @@ docker rmi *** *** ***
 
 # 导入、导出镜像
 
-```shell
+```bash
 # export & import（容器操作）
 docker export -o xxx.tar xxxid(容器id)
 cat xxx.tar | docker import - xxxname(镜像名xxx/xxx:1.0)
@@ -122,7 +122,7 @@ docker load -I xxx.tar
 
 # 镜像仓库
 
-```shell
+```bash
 # 登录远程仓库
 docker login hub.yun.***** -u xxx
 
@@ -137,7 +137,7 @@ docker search imageName
 
 # Dockerfile语法
 
-```
+```dockerfile
 //拉取基础镜像
 FROM <IMAGE>
 
@@ -182,7 +182,7 @@ ONBUILD [INSTRUCTION]
 
 举个🌰
 
-```
+```dockerfile
 FROM centos
 MAINTAINER nobody "xx@163.com"
 RUN mkdir -p /opt/jdk/

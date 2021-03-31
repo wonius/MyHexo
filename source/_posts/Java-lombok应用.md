@@ -16,7 +16,7 @@ lombok的方面之处就不多说了，这里列一下使用中遇到的一些�
 
 解决方案：父类不用@Builder，子类构造函数上加@Builder
 
-```
+```java
 @AllArgsConstructor
 @NoArgsConstructor
 public class Father {

@@ -13,7 +13,7 @@ copyright: true
 
 ​	今天在DB里用普通用户做操作时，会报这个错误。主要是因为user表中有匿名用户，将匿名用户删除就可以了。
 
-```
+```bash
 #首先进入mysql
 mysql -uroot -p
 
@@ -36,7 +36,7 @@ service mysqld restart
 
 ​	一般由于密码错误，或者有用户没有密码的情况。	可以先设置成无密码模式进入，再将有问题的用户进行调整。
 
-```
+```bash
 #修改my.cnf
 vim /etc/my.cnf
 #在[mysqld]中加入
@@ -61,3 +61,4 @@ flush privileges;
 #重启服务
 service mysqld restart
 ```
+

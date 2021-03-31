@@ -14,7 +14,7 @@ description: TensorFlow常用API
 
 ### Define
 
-```
+```python
 constant(value, dtype=None, shape=None, name='Const', verify_shape=False)
 ```
 
@@ -28,7 +28,7 @@ constant(value, dtype=None, shape=None, name='Const', verify_shape=False)
 | verify_shape | N    | boolean      | 检测shape是否和value的shape一致。<br />若值为False，当不一致时，会用最后一个元素将shape补全 |
 ### Demo
 
-```
+```python
 import tensorflow as tf
 import numpy as np
 
@@ -116,7 +116,7 @@ with tf.Session() as sess:
 
 ###Define
 
-```
+```python
 placeholder(dtype, shape=None, name=None)
 ```
 
@@ -130,7 +130,7 @@ placeholder(dtype, shape=None, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 import numpy as np
 
@@ -165,7 +165,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 conv2d(input, filter, strides, padding, 
 		use_cudnn_on_gpu=True, data_format='NHWC', name=None)
 ```
@@ -184,7 +184,7 @@ conv2d(input, filter, strides, padding,
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -243,7 +243,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 relu(features, name=None)
 ```
 
@@ -256,7 +256,7 @@ relu(features, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -285,7 +285,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 max_pool(value, ksize, strides, padding,
 		data_format='NHWC', name=None)
 ```
@@ -303,7 +303,7 @@ max_pool(value, ksize, strides, padding,
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -357,7 +357,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 dropout(x, keep_prob, noise_shape=None, seed=None, name=None)
 ```
 
@@ -373,7 +373,7 @@ dropout(x, keep_prob, noise_shape=None, seed=None, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -417,7 +417,7 @@ tf.nn.weighted_cross_entropy_with_logits三种交叉熵函数
 
 ### Define
 
-```
+```python
 sigmoid_cross_entropy_with_logits(_sentinel=None, labels=None, logits=None, name=None)
 ```
 
@@ -432,7 +432,7 @@ sigmoid_cross_entropy_with_logits(_sentinel=None, labels=None, logits=None, name
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -470,7 +470,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 bias_add(value, bias, data_format=None, name=None)
 ```
 
@@ -485,7 +485,7 @@ bias_add(value, bias, data_format=None, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -536,7 +536,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
 ```
 
@@ -553,7 +553,7 @@ truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -582,7 +582,7 @@ print (tf.Session().run(initial))
 
 ### Define
 
-```
+```python
 reduce_mean(input_tensor, axis=None, keep_dims=False, name=None, reduction_indices=None)
 ```
 
@@ -598,7 +598,7 @@ reduce_mean(input_tensor, axis=None, keep_dims=False, name=None, reduction_indic
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -634,7 +634,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 square(x, name=None)
 ```
 
@@ -647,7 +647,7 @@ square(x, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -681,7 +681,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 squared_difference(x, y, name=None)
 ```
 
@@ -695,7 +695,7 @@ squared_difference(x, y, name=None)
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """
@@ -732,7 +732,7 @@ with tf.Session() as sess:
 
 ### Define
 
-```
+```python
 __init__(initial_value=None, trainable=True, collections=None, validate_shape=True,
 		caching_device=None, name=None, variable_def=None, dtype=None, expected_shape=None,
 		import_scope=None)
@@ -753,7 +753,7 @@ __init__(initial_value=None, trainable=True, collections=None, validate_shape=Tr
 
 ### Demo
 
-```
+```python
 import tensorflow as tf
 
 """

@@ -32,7 +32,7 @@ pip：
 
 ​	当我安装python3.6.5之后，python3中自带pip3，且将原来装的pip覆盖，导致pip无法使用。虽然不用pip命令也可以使用pip功能（`python -m pip install XXXX`），可以通过重新安装pip方法，使pip生效。
 
-```
+```bash
 sudo python -m pip install --upgrade pip --force-reinstall
 # 查看pip信息
 pip -V
@@ -44,3 +44,4 @@ pip3 -V
 ```
 
 ​	
+

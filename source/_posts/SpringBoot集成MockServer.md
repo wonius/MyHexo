@@ -22,7 +22,7 @@ description: SpringBoot集成MockServer，将http接口进行mock
 
 1. 在pom文件中增加mockserver的maven插件：
 
-   ```
+   ```xml
    <plugin>
        <groupId>org.mock-server</groupId>
        <artifactId>mockserver-maven-plugin</artifactId>
@@ -137,7 +137,7 @@ description: SpringBoot集成MockServer，将http接口进行mock
                    .respond(HttpResponse.response().withStatusCode(200).withBody("success"));
    ```
 
-   ​
+   
 
 ## 更多详情参见官网
 

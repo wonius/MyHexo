@@ -50,7 +50,7 @@ RAC架构需要与Oracle的另外一种技术，ASM（Automatic Storage Manageme
 
 该模式下需要先建立一个ASM实例，然后不同Oracle主机使用该ASM，创建表空间时指定该ASM。
 
-RAC、ASM对于硬件的要求更高，且由于共享数据，基本可以实时切换。一般核心系统
+RAC、ASM对于硬件的要求更高，且由于共享数据，基本可以实时切换。一般应用于核心系统，如支付系统等。
 
 ```sql
 -- ASM模式，ASM实例名为+data_asm，创建名为dbdata的表空间
@@ -69,6 +69,6 @@ create tablespace dbdata
 
 就说两地三备份吧，总共涉及3个机房，主机房A，同城机房B，异地机房C。
 
-在主机房A中Oracle可以选择DG或者RAC架构（对于数据要求这么高，应该得用RAC了吧）。
+在主机房A中Oracle可以选择DG或者RAC架构。
 
 同城机房B和异地机房C，视要求搭建。不同库间使用DG同步，同步链路为A->B，A->C。

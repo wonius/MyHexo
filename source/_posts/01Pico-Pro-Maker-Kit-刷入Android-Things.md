@@ -45,17 +45,17 @@ copyright: true
 
 加入环境变量：
 
-```
-//我安装了ohmyzsh插件，所以需要编辑.zshrc。同学们根据实际配置修改
+```bash
+# 我安装了ohmyzsh插件，所以需要编辑.zshrc。同学们根据实际配置修改
 vim ~/.zshrc
 
-//文件末尾中加入
+# 文件末尾中加入
 export PATH=$PATH:/Users/woniu/Library/Android/sdk/platform-tools
 
-//别忘了编译
+# 别忘了编译
 source ~/.zshrc
 
-//检测是否可用
+# 检测是否可用
 fastboot -h
 ```
 
@@ -71,7 +71,7 @@ fastboot -h
 
 下载iot_imx7d_pico后，解压，到该目录下执行：
 
-```
+```bash
 ./flash-all.sh		//Win系统下执行flash-all.bat
 ```
 

@@ -22,7 +22,7 @@ description: SpringCloud聚合项目搭建，创建Eureka注册中心和服务�
 
 配置pom文件，添加SpringCloud依赖
 
-```
+```xml
 <packaging>pom</packaging>
 
 <parent>
@@ -87,7 +87,7 @@ description: SpringCloud聚合项目搭建，创建Eureka注册中心和服务�
 
 创建后会自动在`parent`的pom中添加模块，如果没有，手动添加，如下：
 
-```
+```xml
 <modules>
     <module>eureka-server</module>
     <module>service</module>
@@ -96,7 +96,7 @@ description: SpringCloud聚合项目搭建，创建Eureka注册中心和服务�
 
 编辑该模块中的pom文件：
 
-```
+```xml
 <parent>
     <groupId>com.woniu</groupId>
     <artifactId>springcloud-parent</artifactId>
@@ -121,7 +121,7 @@ description: SpringCloud聚合项目搭建，创建Eureka注册中心和服务�
 
 对应Application类添加注解：
 
-```
+```java
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaServersApplication {
@@ -134,7 +134,7 @@ public class EurekaServersApplication {
 
 编辑application.yml配置文件：
 
-```
+```java
 server:
   port: 8081
 eureka:
@@ -156,7 +156,7 @@ eureka:
 
 修改pom文件：
 
-```
+```xml
 <parent>
     <artifactId>springcloud-parent</artifactId>
     <groupId>com.woniu</groupId>
@@ -177,7 +177,7 @@ eureka:
 
 在main下面创建resources目录，该目录下创建application.yml文件：
 
-```
+```yaml
 spring:
   application:
     name: service
@@ -191,7 +191,7 @@ server:
 
 在对应Application类添加注解：
 
-```
+```java
 @SpringBootApplication
 @EnableEurekaClient
 @RestController

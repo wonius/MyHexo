@@ -12,7 +12,7 @@ description: 服务器搭建shadowsocks服务
 
 ### Centos
 
-```
+```bash
 sudo yum install python-pip
 sudo pip install shadowsocks
 sudo pip install --upgrade pip
@@ -20,7 +20,7 @@ sudo pip install --upgrade pip
 
 ### Ubuntu
 
-```
+```bash
 sudo -s
 apt-get update
 apt-get install python-pip
@@ -30,7 +30,7 @@ pip install --upgrade pip
 
 ## 配置文件
 
-```
+```bash
 mkdir /etc/shadowsocks
 vim /etc/shadowsocks/ss.json
 
@@ -52,7 +52,7 @@ server_port中配的端口，需要服务器上对外开放
 
 ## 启动
 
-```
+```bash
 sudo /usr/local/bin/ssserver  -c /etc/shadowsocks/ss.json -d start
 sudo /usr/local/bin/ssserver  -c /etc/shadowsocks/ss.json -d stop
 sudo /usr/local/bin/ssserver  -c /etc/shadowsocks/ss.json -d restart

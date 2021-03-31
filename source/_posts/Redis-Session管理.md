@@ -14,7 +14,7 @@ description: 项目中使用redis存储session
 
 # tryLock
 
-```
+```java
     /**
      * 尝试获取锁，如果获取到，并设置过期时间
      * @param keyName
@@ -36,7 +36,7 @@ description: 项目中使用redis存储session
 
 # getLock
 
-```
+```java
     /**
      * 一定会获取到锁，并设置过期时间
      * @param keyName

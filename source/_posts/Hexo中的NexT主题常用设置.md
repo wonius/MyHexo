@@ -16,7 +16,7 @@ copyright: true
 1. 找一副自己中意的图片，尽量简单，因为会缩成很小。利用[在线工具](http://tool.lu/favicon/)制作icon，保存。我的大小是32*32，加载时大多时候很流畅，有时也会转啊转；
 2. 将保存的favicon.ico移动至hexo-site/themes/next/source/images目录下；
 3. 修改next配置文件_config.yml，如下：
-```
+```bash
 favicon: images/favicon.ico
 ```
 4. hexo g && hexo s，就可以在本地看到效果了。调试满意后，hexo d发布；
@@ -40,7 +40,7 @@ favicon: images/favicon.ico
 &emsp;&emsp;建议通过在模板中增加属性的方式，添加关键字、摘要。
 
 1. 修改next/_config.yml配置文件:
-```
+```bash
   auto_excerpt:
   //开启摘要
   enable: true
@@ -48,7 +48,7 @@ favicon: images/favicon.ico
   length: 150
 ```
 2. 修改hexo-site/scaffolds/post.md文件，增加keywords、description。
-```
+```bash
 ---
 title: {{ title }}
 date: {{ date }}
@@ -65,7 +65,7 @@ description:
 ## 修改文章宽度
 &emsp;&emsp; 修改/next/source/css/_custom/custom.styl。该文件提供给用户配置自定义的样式，用户尽量避免对源代码的改动，以免牵一发而动全身。
 针对Mist、Muse风格，可以用如下配置
-```
+```bash
 // 修改成你期望的宽度
 $content-desktop = 1080px
 
@@ -73,7 +73,7 @@ $content-desktop = 1080px
 $content-desktop-large = 1200px
 ```
 如果是Pisces风格，则需要
-```
+```bash
 header{ width: 90%; }
 .container .main-inner { width: 90%; }
 .content-wrap { width: calc(100% - 260px); }
@@ -81,7 +81,7 @@ header{ width: 90%; }
 
 ## 新建文章时同时建立同名目录，保存图片
 
-```
+```bash
 //编辑hexo目录下的_config.yml，修改如下配置
 post_asset_folder:true
 

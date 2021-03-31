@@ -47,7 +47,7 @@ description: SpringBoot多台实例，监控redis中的变量失效事件，并�
 
 pom文件增加：
 
-```
+```xml
 <dependency>
     <groupId>redis.clients</groupId>
     <artifactId>jedis</artifactId>
@@ -56,7 +56,7 @@ pom文件增加：
 
 ### yml中增加配置
 
-```
+```yaml
 jedis:
   max:
     total: 100

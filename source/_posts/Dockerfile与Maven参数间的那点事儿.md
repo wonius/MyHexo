@@ -45,7 +45,7 @@ description: Maven设置Dockerfile参数
 
 ## dockerfile配置
 
-```
+```dockerfile
 ...
 # 定义参数
 ARG APP_NAME

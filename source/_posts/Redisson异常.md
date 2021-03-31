@@ -10,7 +10,7 @@ description: Redisson使用过程中遇到的一些坑
 
 # WRONGTYPE Operation against a key holding the wrong kind of value
 
- ```
+ ```java
 RLock lc = redisson.getLock("LOCK"); 
 lc.lock(1000,TimeUnit.MILLISECONDS);
  ```
@@ -27,7 +27,7 @@ redisson中的getLock为了保持原子性，使用Lua脚本一次提交。在�
 
 # unlock方法中的publish
 
-```
+```java
 RLock lc = redisson.getLock("LOCK");
 lc.unlock();
 ```
@@ -44,7 +44,7 @@ lc.unlock();
 
 使用monitor实时监控redis执行的命令，发现在unlock时，会依次做下面的操作：
 
-```
+```bash
 exists XXXX
 hexists XXXX ******
 hincrby XXXX ****** -1

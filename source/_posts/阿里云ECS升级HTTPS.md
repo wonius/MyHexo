@@ -29,7 +29,7 @@ copyright: true
 
 ​    打开防火墙端口
 
-```shell
+```bash
 # 编辑
 vim /etc/sysconfig/iptables
 # 添加记录
@@ -42,7 +42,7 @@ service iptables restart
 
 ​	将证书下载，在服务器上nginx目录下建立/cert，将证书解压，scp到/cert目录下：
 
-```shell
+```bash
 #在conf.d下建立单独conf文件
 vim ssl.yuming.conf
 
@@ -79,7 +79,7 @@ service nginx restart
 
 ​	做完上面的配置之后，可以通过https协议访问网站，不过代码中使用request.getScheme()取到的协议仍是http，不是https，有报错，还需在server.xml中的Engine模块中添加，需重启。
 
-```shell
+```bash
 <Valve className="org.apache.catalina.valves.RemoteIpValve"  
 remoteIpHeader="X-Forwarded-For"  
 protocolHeader="X-Forwarded-Proto"  
@@ -90,6 +90,6 @@ protocolHeaderHttpsValue="https"/>
 
 ​	如果需要将所有请求强制使用https协议，在监听80端口处增加如下配置：
 
-```shell
+```bash
 rewrite ^(.*)$ https://${server_name}$1 permanent;
 ```

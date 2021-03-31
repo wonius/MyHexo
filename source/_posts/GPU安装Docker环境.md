@@ -30,7 +30,7 @@ TensorFlow、cuda、cudnn、python对应关系
 
 如果已经安装低版本的驱动，需要升级，需要将所有使用nvidia的程序暂停（一般只有docker），再卸载。
 
-```
+```bash
 # 先暂停docker
 service docker stop
 
@@ -52,7 +52,7 @@ nvidia-smi
 
 # 安装Python3
 
-```shell
+```bash
 mkdir -p /usr/local/python3
 tar -zxvf Python-3.6.6.tgz
 cd Python-3.6.6
@@ -68,7 +68,7 @@ python3 -V
 
 # 安装pip3
 
-```shell
+```bash
 tar -zxvf pip-9.0.1.tgz
 cd pip-9.0.1
 python3 setup.py install
@@ -78,7 +78,7 @@ pip3 -V
 
 # 安装cuda
 
-```shell
+```bash
 # rpm安装
 wget http://mirrors.*******/cuda-repo-rhel7-9-0-local-9.0.176-1.x86_64.rpm
 rpm -ivh cuda-repo-*.rpm
@@ -101,7 +101,7 @@ cat /usr/local/cuda/version.txt 或 nvcc --version
 
 直接将cudnn中相关文件，拷贝到cuda对应目录即可
 
-```shell
+```bash
 tar -xvf cudnn-8.0-linux-x64-v6.0.tgz
 # 进入cuda
 cd /usr/local/cuda
@@ -127,7 +127,7 @@ ldconfig -v | grep cudnn /
 
 # 升级docker到18
 
-```shell
+```bash
 # 卸载原来docker
 # rpm安装，直接remove
 yum remove docker
@@ -150,7 +150,7 @@ docker --version
 
 # 安装nvidia-docker
 
-```shell
+```bash
 rpm -ivh libnvidia-container1-1.0.2-1.x86_64.rpm
 rpm -ivh libnvidia-container-tools-1.0.2-1.x86_64.rpm
 rpm -ivh nvidia-container-runtime-hook-1.4.0-2.x86_64.rpm

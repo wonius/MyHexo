@@ -14,12 +14,12 @@ copyright: true
 ---
 
 ### 查看系统当前的shell
-```
+```bash
 echo $SHELL
 ```
 返回结果如下：
 
-```
+```bash
 /bin/bash
 ```
 
@@ -27,13 +27,13 @@ echo $SHELL
 
 ### 查看bin下是否有zsh包
 
-```
+```bash
 cat /etc/shells
 ```
 
 返回结果如下：
 
-```
+```bash
 /bin/sh
 /bin/bash
 /sbin/nologin
@@ -46,19 +46,19 @@ cat /etc/shells
 
 ### 安装zsh包
 
-```
+```bash
 yum -y install zsh
 ```
 
 安装完成后查看shell列表：
 
-```
+```bash
 cat /etc/shells
 ```
 
 返回结果如下：
 
-```
+```bash
 /bin/sh
 /bin/bash
 /sbin/nologin
@@ -70,61 +70,61 @@ cat /etc/shells
 
 ### 切换shell至zsh
 
-```
+```bash
 chsh -s /bin/zsh
 ```
 
 chsh用法请自行查找，返回结果如下：
 
-```
+```bash
 Shell changed.
 ```
 
 此时查看shell，已经更换为zsh：
 
-```
+```bash
 echo $SHELL
 ```
 
 返回结果如下：
 
-```
+```bash
 /bin/bash
 ```
 
 需要重启才能生效：
 
-```
+```bash
 sudo reboot
 ```
 
 重启后查看shell：
 
-```
+```bash
 echo $SHELL
 ```
 
 返回结果：
 
-```
+```bash
 /bin/zsh
 ```
 
 ### 安装git
 
-```
+```bash
 yum -y install git
 ```
 
 ### 安装oh-my-zsh
 
-```
+```bash
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ```
 
 出现如下界面显示安装成功：
 
-```
+```bash
          __                                     __   
   ____  / /_     ____ ___  __  __   ____  _____/ /_  
  / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
@@ -144,26 +144,26 @@ p.p.s. Get stickers and t-shirts at http://shop.planetargon.com.
 
 如果执行命令时提示==warning: cannot set LC_CTYPE locale==，修改profile文件：
 
-```
+```bash
 vim /etc/profile
 ```
 
 在文件末尾处添加：
 
-```
+```bash
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 ```
 
 修改后更新：
 
-```
+```bash
 source /etc/profile
 ```
 
 ### 主题设置
 
-```
+```bash
 //查看系统自带的主题
 ls ~/.oh-my-zsh/themes
 
@@ -192,13 +192,13 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
 默认自带git插件，可以用下面命令查看有哪些快捷指令
 
-```
+```bash
 alias | grep git
 ```
 
 #### zsh-autosuggestions（命令补全）
 
-```
+```bash
 //安装插件
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
@@ -209,7 +209,7 @@ vim ~/.zshrc
 
 #### zsh-syntax-highlighting（命令高亮）
 
-```
+```bash
 //安装插件
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
@@ -220,7 +220,7 @@ vim ~/.zshrc
 
 #### autojump（目录快速跳转）
 
-```
+```bash
 //安装autojump
 brew install autojump
 

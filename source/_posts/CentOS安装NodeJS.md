@@ -2,10 +2,10 @@
 title: CentOS安装NodeJS
 date: 2018-02-06 11:09:48
 tags: 
-- Node
+- NodeJs
 categories: Frontend
 keywords: 
-- Node
+- NodeJs
 - CentOS
 description: CentOS安装NodeJS方法
 copyright: true
@@ -17,19 +17,19 @@ copyright: true
 
 ​	yum安装自带nodjs版本太低，到[node源码版本](https://github.com/nodesource/distributions)上选择合适的版本，我安装了最新版本，9.x
 
-```
+```bash
 curl -sL https://rpm.nodesource.com/setup_9.x | bash -
 ```
 
 ### 安装
 
-```
+```bash
 yum install -y nodejs
 ```
 
 ### 检查node、npm版本
 
-```
+```bash
 node -v
 npm -v
 ```

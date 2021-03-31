@@ -10,7 +10,7 @@ description: Dockerfile记录
 
 # dockerfile1
 
-```
+```dockerfile
 FROM hub.yun.paic.com.cn/library/tomcat:8.5-jre8
 
 ENV USER_NAME woniu
@@ -35,7 +35,7 @@ USER $USER_NAME
 
 该dockerfile基于上一个，由于上一个dockerfile最后切换到用户woniu，没有mkdir权限，所以需要先切换到root用户。
 
-```
+```dockerfile
 FROM hub.yun.paic.com.cn/library/tomcat:1.0
 
 USER root

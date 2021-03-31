@@ -16,7 +16,7 @@ description: SpringBoot集成Swagger2
 
 ## 增加denpendency
 
-```
+```xml
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-swagger2</artifactId>
@@ -31,7 +31,7 @@ description: SpringBoot集成Swagger2
 
 ## 创建Swagger2配置类
 
-```
+```java
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
@@ -60,7 +60,7 @@ public class Swagger2Config {
 
 ## 🌰
 
-```
+```java
 @RestController
 @RequestMapping(value = "/users")
 @Api(tags = "用户管理类")

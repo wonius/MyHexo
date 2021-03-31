@@ -8,18 +8,8 @@ description: 创建Android Things工程
 copyright: true
 ---
 
-
-
-
-
-
-
-
-
 https://partner.android.com/things/console/#/
 
 https://developer.android.com/things/training/first-device/create-studio-project.html
 
 https://developer.android.com/studio/projects/create-project.html
-
-&emsp;&emsp;

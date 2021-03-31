@@ -18,7 +18,7 @@ copyright: true
 
 ## cat
 
-```
+```bash
 //查看前1000行
 head -n 1000 filename
 //查看后1000行
@@ -35,7 +35,7 @@ cat file | head -n 3000 | tail -n +1000
 ```
 ## grep
 
-```
+```bash
 //匹配文件中所有foo关键字上下1000行
 grep -C 1000 foo filename
 
@@ -47,20 +47,20 @@ grep -A 1000 foo filename
 ```
 ## sed
 
-```
+```bash
 //显示第1000到3000行的数据
 sed -n '1000,3000p' filename
 ```
 
 ## find-文件搜索
 
-```
+```bash
 find / -name filename
 ```
 
 ## ps-查找进程
 
-```
+```bash
 ps -ef | grep XXX
 
 kill -9 pid
@@ -68,7 +68,7 @@ kill -9 pid
 
 ## scp-跨服务器拷贝
 
-```shell
+```bash
 scp file user@localhost:dir
 ```
 
@@ -76,7 +76,7 @@ scp file user@localhost:dir
 
 1. 压缩
 
-```
+```bash
 #只打包
 tar -cvf file.tar file
 #使用gzip压缩，再打包
@@ -94,7 +94,7 @@ zip file.zip file
 
 2. 解压
 
-```
+```bash
 #解压常规包
 tar -xvf file.tar
 #解压gzip包
@@ -112,7 +112,7 @@ unzip file.zip
 
 3. 参数解析
 
-```
+```bash
 #必须参数，且只能选一个
 -c:	建立压缩文档
 -x:	解压
@@ -133,28 +133,28 @@ unzip file.zip
 
 ## 创建软连接
 
-```
+```bash
 #源文件指要被链接的文件，目标文件指新建的软连接
 ln -s 源文件 目标文件
 ```
 
 ##  匹配进程并kill
 
-```
+```bash
 //查找hello相关进程并kill
 ps -ef |grep hello |awk '{print $2}'|xargs kill -9
 ```
 
 ## sed: 替换文本
 
-```
+```bash
 //将book替换为books
 sed 's/book/books/g' file
 ```
 
 ## 查看文件大小
 
-```
+```bash
 # 磁盘使用情况
 df -h
 

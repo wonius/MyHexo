@@ -16,13 +16,13 @@ description: MacOS搭建Aria2
 
 MacOs安装Aria2十分简单，使用homebrew安装就可以
 
-```
+```bash
 brew install aria2
 ```
 
 ### 配置
 
-```
+```bash
 //创建配置目录
 mkdir ~/.aria2
 
@@ -80,7 +80,7 @@ file-allocation=prealloc
 
 ### 运行aria2
 
-```
+```bash
 aria2c
 
 //检查是否已启动

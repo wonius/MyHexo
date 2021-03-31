@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Gavin's Notes
+title: Gavin's 自留地儿
 subtitle: 自留地儿
 description: 
 author: Gavin 
@@ -13,7 +13,7 @@ keywords: Gavin's Notes, woniu, wonius, wonius.top
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wonius.top/ 
+url: https://wonius.top/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true 
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -48,7 +48,7 @@ highlight:
 menu:
 home: /
 archives: /archives
-#about: /about
+about: /about
 categories: /categories
 tags: /tags
 #commonweal: /404.html
@@ -82,7 +82,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: oranges
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

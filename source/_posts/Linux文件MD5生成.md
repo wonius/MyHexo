@@ -9,7 +9,7 @@ keywords:
 description:
 ---
 
-```
+```bash
 find ./ -type f | xargs md5sum > a.md5
 ```
 

@@ -24,7 +24,7 @@ redis信息
 
 找到对应的redis.conf文件，一般在/etc/目录下，然后找到requirepass，修改后面的值，并将前面的# 删掉
 
-```
+```bash
 # requirepass foobared
 ```
 

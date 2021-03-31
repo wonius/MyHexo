@@ -10,7 +10,7 @@ copyright: true
 
 ## 本地代码初始化到远程仓库
 
-```
+```bash
 //create a new repository on the command line
 git init
 git add README.md
@@ -36,7 +36,7 @@ git push -u origin master
 
 解决办法：
 
-```
+```bash
 git stash
 
 git pull
@@ -46,7 +46,7 @@ git stash pop
 
 如果希望更新时覆盖本地文件，命令如下：
 
-```
+```bash
 git reset --hard
 git pull
 ```
@@ -57,20 +57,20 @@ git pull
 
 1. 首先查看要回退到哪个历史版本id：
 
-   ```Git
+   ```bash
    git log
    ```
 
 2. 回退。比如id为784dd834b250d634a7686f28a7c323d5c6402e90
 
-   ```
+   ```bash
    //该回退动作会将本地所有改动回退，所以一定要记得stash。
    git reset --hard 784dd834b250d634a7686f28a7c323d5c6402e90
    ```
 
 3. 如果想将回退的版本推送到远程服务器，再用push。只回退本地不用此操作:
 
-   ```
+   ```bash
    git push -f origin master
    ```
 
@@ -80,7 +80,7 @@ git pull
 
 ​	当我们开发过程中，经常会遇到开发进行了一半，需要切换到另外一个分支的情况。stash命令可以将你现在所有变动进行暂存，后续切换回来时，从暂存中恢复就可以了。stash真的是很好用的工具。
 
-```
+```bash
 //暂存
 git stash
 
@@ -102,7 +102,7 @@ git stash clear					//清楚栈中所有stash版本
 
 ## 分支命令
 
-```
+```bash
 #查看远程分支
 git branch -a
 
@@ -136,7 +136,7 @@ git push origin :test
 
 解决办法：
 
-```
+```bash
 git pull origin master ----allow-unrelated-histories
 ```
 
@@ -144,24 +144,23 @@ git pull origin master ----allow-unrelated-histories
 
 1. 手动分别推送（如果需要两个库代码不同）
 
-```
-
-//添加仓库，并设置别名
+```bash
+// 添加仓库，并设置别名
 git remote add github https://*****.git
 git remote add gitlab https://*****.git
 
 // 删除别名
 git remote remove github
 
-//推送
+// 推送
 git push github master:master
-//如果是新建的仓库，需要加-f参数
+// 如果是新建的仓库，需要加-f参数
 git push -f github master:master
 ```
 
 2. 一键push所有库（两个库代码完全一样）
 
-```
+```bash
 //将新仓库URL绑定到origin上
 git remote set-url --add origin https://*****.git
 //push
@@ -175,20 +174,20 @@ git config -e
 
 1. 命令修改
 
-   ```
+   ```bash
    git remote set-url origin http://*****.git
    ```
 
 2. 先删除再添加
 
-   ```
+   ```bash
    git remote rm origin
    git remote add origin http://*****.git
    ```
 
 3. 配置文件修改
 
-   ```
+   ```bash
    cd ***/.git
    vim config
    # 然后修改
@@ -200,7 +199,7 @@ git config -e
 
 使用rebase，将自己分支每次重置为主分支记录，再提交，全程只有主分支的提交历史，比较清晰
 
-```
+```bash
 git add .
 git commit -m "*****"
 git rebase master(主分支)
@@ -210,7 +209,7 @@ git push
 
 ## 修改commit内容
 
-```
+```bash
 git commit --amend
 # 修改内容
 git push -f

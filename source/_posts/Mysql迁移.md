@@ -39,7 +39,7 @@ copyright: true
 
 1. 查询缓存的设置
 
-   ```
+   ```mysql
    #查看查询缓存的设置
    #如下参数都可是使用 select @@global.XXXX; 单独查询
    show variables like '%query_cache%';
@@ -90,7 +90,7 @@ copyright: true
    该值较低，说明写操作比较频繁，或者有些碎片
    ```
 
-   ​
+   
 
 2. 其他配置
 

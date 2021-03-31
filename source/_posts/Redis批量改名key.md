@@ -27,7 +27,7 @@ description: Redis中的key批量改名shell脚本
 
 ## 脚本
 
-```
+```bash
 //创建shell脚本
 vim rename.sh
 

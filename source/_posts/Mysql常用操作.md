@@ -13,7 +13,7 @@ copyright: true
 
 mysql版本：5.7.18
 
-```
+```bash
 //先暂停服务
 mysql.server stop
 
@@ -39,7 +39,7 @@ mysql.server start
 
 1. 备份某库
 
-   ```
+   ```bash
    mysqldump -u用户名 -p密码 -h主机 数据库 a -w “sql条件” –lock-all-tables > 路径
 
    mysqldump -uroot -p1234 dbname a –where “tag='88′” –no-create-info> c:\a.sql
@@ -49,25 +49,25 @@ mysql.server start
 
 2. 备份某几个库
 
-   ```
+   ```bash
    mysqldump -u root -p game game2 > /tmp/game_backup.sql
    ```
 
 3. 备份所有库
 
-   ```
+   ```bash
    mysqldump -u root -p --all-databases > /tmp/all_backup.sql
    ```
 
 4. 还原数据
 
-   ```
+   ```bash
    mysql -u root -p game < /tmp/game_backup.sql
    ```
 
 5. 跨主机同步
 
-   ```
+   ```bash
    #前提是host2主机上已经创建targetDb数据库, -C指示主机间的数据传输使用数据压缩
    mysqldump --host=host1 --opt sourceDb| mysql --host=host2 -C targetDb
    ```
@@ -75,7 +75,7 @@ mysql.server start
 
 ## 创建用户
 
-```
+```bash
 CREATE USER username IDENTIFIED BY 'password';
 
 #限定在固定地址localhost登录
@@ -87,7 +87,7 @@ CREATE USER username@'%' IDENTIFIED BY 'password';
 
 ## 授权
 
-```
+```bash
 GRANT ALL PRIVILEGES ON *.* TO user@localhost IDENTIFIED BY 'password';
 
 #授予某一些权限时
@@ -96,24 +96,24 @@ GRANT select,insert ON *.* TO test1@'%' IDENTIFIED BY 'password';
 
 ## 查看用户拥有的权限
 
-```
+```bash
 show grants for user;
 ```
 
 ## 查看用户
 
-```
+```bash
 select host, user from mysql.user;
 ```
 
 ## 创建库
 
-```
+```bash
 CREATE DATABASE dbname;
 ```
 
 ## 删除库
 
-```
+```bash
 DROP DATABASE dbname；
 ```

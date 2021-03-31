@@ -9,14 +9,14 @@ copyright: true
 ---
 
 ## 字符串 <-> 整型
-```
+```java
 String a = String.valueOf(2);		//integer to numeric string
 
 int i = Integer.parseInt(a);		//numeric string to an int
 ```
 
 ## 字符串 -> 日期
-```
+```java
 //Method 1
 java.util.Date = java.text.DateFormat.getDateInstance().parse(String date);
 
@@ -26,13 +26,13 @@ Date date = sdf.parse(myString);
 ```
 
 ## util.Date -> sql.Date
-```
+```java
 java.util.Date utilDate = new java.util.Date();
 java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
 ```
 
 ## Array -> Map
-```
+```java
 String[][] countries = {{ "United States", "New York" }, { "United Kingdom", "London" },  
         { "Netherland", "Amsterdam" }, { "Japan", "Tokyo" }, { "France", "Paris" }};
         
@@ -40,7 +40,7 @@ Map countryCapitals = ArrayUtils.toMap(countries);
 ```
 
 ## 向文件末尾添加内容
-```
+```java
 BufferedWriter out = null;
 try {
 	out = new BufferedWriter(new FileWriter(“fileName”, true));
@@ -55,7 +55,7 @@ try {
 ```
 
 ## 得到当前方法的名字
-```
+```java
 String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
 ```
 
@@ -176,7 +176,7 @@ private void createThumbnail(String filename, int thumbWidth, int thumbHeight, i
 
 ## 按照规则取目录下的文件名数组
 
-```
+```java
 File rootFile = new File("/XX/XX");
 String[] dirList = rootFile.list(new FilenameFilter() {
     @Override
